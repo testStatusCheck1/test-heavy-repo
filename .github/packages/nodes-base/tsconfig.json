@@ -1,0 +1,19 @@
+{
+	"extends": "../../tsconfig.json",
+	"compilerOptions": {
+		"outDir": "dist",
+		"lib": ["dom", "es2020"],
+		"types": ["node", "jest"],
+		// TODO: remove all options below this line
+		"noImplicitReturns": false,
+		"noUnusedLocals": false,
+		"useUnknownInCatchVariables": false
+	},
+	"include": [
+		"credentials/**/*.ts",
+		"src/**/*.ts",
+		"nodes/**/*.ts",
+		"nodes/**/*.json",
+		"credentials/translations/**/*.json"
+	]
+}
